@@ -48,6 +48,13 @@ A Assesment submission project, where the prompt is taken from the "Google AI St
     these are 5 commands that i frequently used in the process of developing this project.
 
 after running the 2nd command we have visit the url (http://localhost:5002) to see the webapp openned.
+
+
+# ScreenShots
+
+1. Homepage
+
+   ![image alt](https://github.com/pavithranarul/which_is_bigger/blob/dac1a7804f3a87862aced9f5fc2f44304f82fc6a/screen-shots/home.png)
           
 
 
