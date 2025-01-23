@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Generative AI Chatbot</title>
+    <style>
+        body {
+            font-family: monospace;
+            margin: 20px;
+            background-color: rgb(1, 20, 46);
+        }
+        h1 {
+            color: rgb(59, 255, 62);
+            text-align: center;
+            margin-top: 18%;
+        }
+        .desc{
+            margin-left: 39%;
+        }
+        .ques{
+            color: rgb(255, 255, 255);
+            margin-top: 30px;
+            margin-left: 38%;
+            line-height: 1.5;
+        }
+        input {
+            padding: 10px;
+            font-size: 15px;
+            width: 300px;
+            margin-left: 38%;
+            border-radius: 10px;
+            border: none;
+        }
+        .first{
+            margin-left: 45%;
+        }
+        button {
+            font-size: 16px;
+            margin-left: 15px;
+            padding: 7px;
+            border-radius: 10px;
+            border: none;
+            background-color: rgb(59, 255, 62);
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #000000;
+            color: rgb(59, 255, 62);
+        }
+        p {
+            margin-top: 20px;
+            font-style: italic;
+            font-size: medium;
+            max-width: 500px;
+            color: rgb(255, 255, 255);
+            margin-left: 35%;
+            line-height: 1.5;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Which is Bigger</h1>
+    <p class="desc">Test if AI knows which number is Bigger</p>
+    <p class="ques">Enter your question below:</p>
+    <input type="text" id="question" placeholder="Which is bigger 8.99 or 8.9?"><br>
+    <button class="first" onclick="askQuestion()">Ask</button>
+    <button onclick="resetFields()">Reset</button>
+    <p id="response"></p>
+    <script>
+        async function askQuestion() {
+            const question = document.getElementById('question').value.trim();
+            if (!question) {
+                document.getElementById('response').textContent = "Please enter a question.";
+                return;
+            }
+
+            document.getElementById('response').textContent = "Thinking...";
+
+            try {
+                const res = await fetch('/ask', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({ question }),
+                });
+                const data = await res.json();
+                document.getElementById('response').textContent = data.response;
+            } catch (err) {
+                document.getElementById('response').textContent = "Error: Unable to get a response.";
+                console.error(err);
+            }
+        }
+
+        function resetFields() {
+            document.getElementById('question').value = '';
+            document.getElementById('response').textContent = '';
+        }
+    </script>
+</body>
+</html>
