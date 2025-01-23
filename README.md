@@ -17,25 +17,34 @@ A Assesment submission project, where the prompt is taken from the "Google AI St
 # Instructions how to run the docker to run the code locally.
   1. We have commands to run the docker,
        1. At first, we have to build the docker,
-            cmd : docker build -t which-is-bigger .
+
+          cmd : docker build -t which-is-bigger .
+
           where build -> keyword used to build the dockerfile
                 t -> tag,which is the name of the docker going to build
                 and the "." is mandatory
-       2. Then we have to run the docker which is built,
-            cmd : docker run --name genai -d -p 5002:5000 -e GEMINI_API_KEY="YOUR_API_KEY" which-is-bigger
+       3. Then we have to run the docker which is built,
+
+          cmd : docker run --name genai -d -p 5002:5000 -e GEMINI_API_KEY="YOUR_API_KEY" which-is-bigger
+
           where run -> keyword to run the docker built
                 -d -> sets the deamon off
                 -p -> sets the port to 5002:5000
                 then your api key to enhance the ai in the project.
-       3. Then we have the command for views images,
-            cmd : docker images
+       5. Then we have the command for views images,
+
+          cmd : docker images
             which shows the detials of the docker built, with the image id, when it is created and size, tag of the image.
-       4. Then, command to see the port status,
-            cmd : docker ps / docker ps -a
+       7. Then, command to see the port status,
+
+          cmd : docker ps / docker ps -a
+
           it shows the status of the port, port number, container id,command , name of the docker.
-       5. Then, command for removing the image,
-            cmd : docker rmi <imageid>
-            it removes the image by knowing the image id.
+       9. Then, command for removing the image,
+
+          cmd : docker rmi <imageid>
+
+          it removes the image by knowing the image id.
     these are 5 commands that i frequently used in the process of developing this project.
 
 after running the 2nd command we have visit the url (http://localhost:5002) to see the webapp openned.
