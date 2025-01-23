@@ -49,12 +49,43 @@ A Assesment submission project, where the prompt is taken from the "Google AI St
 
 after running the 2nd command we have visit the url (http://localhost:5002) to see the webapp openned.
 
+# process geting code
+1. selecting prompt
 
-# ScreenShots
+   ![image alt](https://github.com/pavithranarul/which_is_bigger/blob/37e4ab1687a7ab303c9e1566a8082908268279ec/screen-shots/prompt1.png)
+
+2. AI prompt
+
+   ![image alt](https://github.com/pavithranarul/which_is_bigger/blob/37e4ab1687a7ab303c9e1566a8082908268279ec/screen-shots/prompt.png)
+
+3. Getting code
+
+   ![image alt](https://github.com/pavithranarul/which_is_bigger/blob/37e4ab1687a7ab303c9e1566a8082908268279ec/screen-shots/getcode.png)
+
+   
+# ScreenShots of the webapp
 
 1. Homepage
 
    ![image alt](https://github.com/pavithranarul/which_is_bigger/blob/dac1a7804f3a87862aced9f5fc2f44304f82fc6a/screen-shots/home.png)
+
+2. Clicking ask button and initial response
+
+   ![image alt](https://github.com/pavithranarul/which_is_bigger/blob/5b65bf2961c40078d9d56f4e75283c74db413729/screen-shots/process.png)
+
+3. After processing 1st response
+
+   ![image alt](https://github.com/pavithranarul/which_is_bigger/blob/5b65bf2961c40078d9d56f4e75283c74db413729/screen-shots/ask.png)
+
+4. 2nd response with different reason
+
+   ![image alt](https://github.com/pavithranarul/which_is_bigger/blob/5b65bf2961c40078d9d56f4e75283c74db413729/screen-shots/ask2.png)
+
+5. After reset button
+
+   ![image alt](https://github.com/pavithranarul/which_is_bigger/blob/5b65bf2961c40078d9d56f4e75283c74db413729/screen-shots/after%20reset.png)
+
+
           
 
 
