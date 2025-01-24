@@ -18,7 +18,7 @@ A Assesment submission project, where the prompt is taken from the "Google AI St
   1. We have commands to run the docker,
        1. At first, we have to build the docker,
 
-          cmd : docker build -t which-is-bigger .
+          cmd : `docker build -t which-is-bigger .`
 
           where build -> keyword used to build the dockerfile
                 t -> tag,which is the name of the docker going to build
