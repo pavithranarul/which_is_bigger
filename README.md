@@ -25,7 +25,7 @@ A Assesment submission project, where the prompt is taken from the "Google AI St
                 and the "." is mandatory
        3. Then we have to run the docker which is built,
 
-          cmd : docker run --name genai -d -p 5002:5000 -e GEMINI_API_KEY="YOUR_API_KEY" which-is-bigger
+          cmd : `docker run --name genai -d -p 5002:5000 -e GEMINI_API_KEY="YOUR_API_KEY" which-is-bigger`
 
           where run -> keyword to run the docker built
                 -d -> sets the deamon off
@@ -33,16 +33,16 @@ A Assesment submission project, where the prompt is taken from the "Google AI St
                 then your api key to enhance the ai in the project.
        5. Then we have the command for views images,
 
-          cmd : docker images
+          cmd : `docker images`
             which shows the detials of the docker built, with the image id, when it is created and size, tag of the image.
        7. Then, command to see the port status,
 
-          cmd : docker ps / docker ps -a
+          cmd : `docker ps` / `docker ps -a`
 
           it shows the status of the port, port number, container id,command , name of the docker.
        9. Then, command for removing the image,
 
-          cmd : docker rmi <imageid>
+          cmd : `docker rmi <imageid>`
 
           it removes the image by knowing the image id.
     these are 5 commands that i frequently used in the process of developing this project.
