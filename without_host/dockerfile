@@ -1,0 +1,16 @@
+FROM python:3.9-slim
+
+# Set working directory
+WORKDIR /app1
+
+# Copy application files
+COPY . /app1
+
+# Install dependencies
+RUN pip install google.generativeai google
+
+# Expose the application port
+# EXPOSE 5000
+
+# Start the Flask web server
+CMD ["python", "app1.py"]
